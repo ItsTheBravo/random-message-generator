@@ -14,15 +14,6 @@ clothes: ["T-shirt", "Jacket", "Pants", "Shoes", "Hat"],
 colours: ["Red", "Blue", "Green", "Yellow", "Purple"],
 };
 
-
-/*let adj = variables.adjectives[Math.floor(Math.random() * variables.adjectives.length)];
-let names = variables.names[Math.floor(Math.random() * variables.names.length)];
-let nouns = variables.nouns[Math.floor(Math.random() * variables.nouns.length)];
-let numbers = variables.numbers[Math.floor(Math.random() * variables.numbers.length)];
-let body_parts = variables.body_parts[Math.floor(Math.random() * variables.body_parts.length)];
-let clothes = variables.clothes[Math.floor(Math.random() * variables.clothes.length)];
-let colours = variables.colours[Math.floor(Math.random() * variables.colours.length)]; */
-
 let phrases = {
     phr: [`Signs point to a very ${randomNum(variables.adjectives)} yes.`,
      `The skies are ${randomNum(variables.adjectives)}. The future is uncertain.`,
