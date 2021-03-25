@@ -4,9 +4,10 @@ let variables = {
 adjectives: ["Sick", "Naked", "Deep", "Fluffy", "Greedy"],
 names: ["John", "Adam", "Kelly", "Barry", "Grace"],
 nouns: ["Sheep", "Fish", "Apparatus", "Rice", "Aircraft"],
-numbers: ["2", "3", "4", "5", "6", "7"],
+numbers: ["2", "3", "4", "5", "6", "7", "8"],
 body_parts: ["Arm", "Leg", "Head", "Foot", "Hand"],
 clothes: ["T-shirt", "Jacket", "Pants", "Shoes", "Hat"],
+colours: ["Red", "Blue", "Green", "Yellow", "Purple"],
 };
 
 
@@ -16,6 +17,7 @@ let nouns = variables.nouns[Math.floor(Math.random() * variables.nouns.length)];
 let numbers = variables.numbers[Math.floor(Math.random() * variables.numbers.length)];
 let body_parts = variables.body_parts[Math.floor(Math.random() * variables.body_parts.length)];
 let clothes = variables.clothes[Math.floor(Math.random() * variables.clothes.length)];
+let colours = variables.colours[Math.floor(Math.random() * variables.colours.length)];
 
 let phrases = {
     phr: [`Signs point to a very ${adj} yes.`,
@@ -31,4 +33,6 @@ let phrases = {
 
 
 let result = phrases.phr[Math.floor(Math.random() * variables.clothes.length)];
-console.log(`Your answer is: ${result}` );
+console.log(`Your answer is: ${result}
+ Your lucky number is: ${numbers}
+ Your special colour is: ${colours}` );
