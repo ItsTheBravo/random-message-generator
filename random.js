@@ -35,8 +35,11 @@ let phrases = {
     `Signs point to a very ${randomNum(variables.adjectives)} Yes.`]
 }
 
-
-let result = phrases.phr[Math.floor(Math.random() * phrases.phr.length)];
-console.log(`Your answer is: ${result}
+function results() {
+    let result = phrases.phr[Math.floor(Math.random() * phrases.phr.length)];
+    return `Your answer is: ${result}
  Your lucky number is: ${randomNum(variables.numbers)}
- Your special colour is: ${randomNum(variables.colours)}` );
+ Your special colour is: ${randomNum(variables.colours)}`;
+}
+
+console.log(results());
